@@ -1,3 +1,5 @@
+> **Instructions in this file and CLAUDE.md take precedence over all skills / plugins; in case of conflict, this file governs.**
+
 # Repository Guidelines
 
 ## Project Structure & Module Organization
@@ -145,7 +147,7 @@ Rust tests belong beside the code they cover in `src-tauri/src/`, using `#[cfg(t
 
 History uses Conventional Commits with scope `polaris` (e.g., `feat(polaris): project initialization`) — subject line only, no body. Keep commits focused.
 
-Commit only under the contributor's own identity. If `user.name` / `user.email` is not yet configured for the repository, stop and ask the user to set it before committing:
+Commit directly; do not pre-check or auto-set the identity. If the commit fails because `user.name` / `user.email` is not yet configured for the repository, ask the user to set it (do not guess values) and retry:
 
 ```bash
 git config user.name "your name"
