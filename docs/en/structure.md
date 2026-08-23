@@ -7,7 +7,6 @@ Polaris is a Tauri v2 application with a Vite + React + TypeScript frontend and 
 - **Stack:** React 19 + TypeScript, built with Vite.
 - **Entry:** `src/main.tsx`
 - **Root component:** `src/App.tsx`
-- **Styles:** `src/App.css`
 - **Assets:** `src/assets/` for frontend assets; `public/` for static files served unchanged.
 
 ## Backend

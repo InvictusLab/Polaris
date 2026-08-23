@@ -11,7 +11,6 @@ This is a Tauri v2 desktop application with a Vite + React + TypeScript frontend
 - **Stack:** React 19 + TypeScript, built with Vite.
 - **Entry:** `src/main.tsx`
 - **Root component:** `src/App.tsx`
-- **Styles:** `src/App.css` (imported inside `App.tsx`; there is no `src/index.css`).
 - **Assets:** `src/assets/` holds frontend assets; `public/` holds static files served unchanged.
 
 ### Backend
@@ -130,8 +129,8 @@ The Vite dev server uses port `1420` with `strictPort: true`; free that port bef
 - Follow `cargo fmt` for formatting.
 - Rust functions and modules use snake_case.
 - Annotate frontend-callable functions with `#[tauri::command]`.
-- The frontend invokes commands by their registered name (e.g., `invoke("greet", { name })`).
-- Register each new command in `tauri::generate_handler![...]` in `src-tauri/src/lib.rs` (the macro uses square brackets, e.g., `tauri::generate_handler![greet]`).
+- The frontend invokes commands by their registered name (e.g., `invoke("my_command", { arg })`).
+- Register each new command in `tauri::generate_handler![...]` in `src-tauri/src/lib.rs` (the macro uses square brackets, e.g., `tauri::generate_handler![my_command]`).
 
 ## Testing Guidelines
 

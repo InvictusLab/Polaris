@@ -7,7 +7,6 @@ Polaris 是一个 Tauri v2 应用：Vite + React + TypeScript 前端配合 Rust 
 - **技术栈：** React 19 + TypeScript，由 Vite 构建。
 - **入口：** `src/main.tsx`
 - **根组件：** `src/App.tsx`
-- **样式：** `src/App.css`
 - **资源：** `src/assets/` 存放前端资源；`public/` 存放原样提供的静态文件。
 
 ## 后端
