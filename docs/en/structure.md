@@ -16,7 +16,7 @@ Polaris is a Tauri v2 application with a Vite + React + TypeScript frontend and 
   - `src-tauri/src/lib.rs` — Tauri commands and the builder.
 - **Config:** `src-tauri/tauri.conf.json`.
   - `beforeDevCommand` runs `pnpm dev`; `beforeBuildCommand` runs `pnpm build`.
-  - Dev server is fixed at `http://localhost:1420`.
+  - Dev server is fixed at `http://localhost:3420`.
 - **Capabilities:** `src-tauri/capabilities/default.json` grants `core:default` and `opener:default`.
 
 ## Documentation

@@ -28,7 +28,7 @@ pnpm tauri dev
 pnpm dev
 ```
 
-Vite 开发服务器运行在 `http://localhost:1420`（`strictPort: true`）—— 启动前请先释放该端口。
+Vite 开发服务器运行在 `http://localhost:3420`（`strictPort: true`）—— 启动前请先释放该端口。
 
 ## 生产构建
 

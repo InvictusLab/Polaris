@@ -5,7 +5,7 @@
   "identifier": "com.invictuslab.polaris",
   "build": {
     "beforeDevCommand": "pnpm dev",
-    "devUrl": "http://localhost:1420",
+    "devUrl": "http://localhost:3420",
     "beforeBuildCommand": "pnpm build",
     "frontendDist": "../dist"
   },

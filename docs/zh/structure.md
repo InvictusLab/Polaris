@@ -16,7 +16,7 @@ Polaris 是一个 Tauri v2 应用：Vite + React + TypeScript 前端配合 Rust 
   - `src-tauri/src/lib.rs` —— Tauri 命令与构建器。
 - **配置：** `src-tauri/tauri.conf.json`。
   - `beforeDevCommand` 执行 `pnpm dev`；`beforeBuildCommand` 执行 `pnpm build`。
-  - 开发服务器固定为 `http://localhost:1420`。
+  - 开发服务器固定为 `http://localhost:3420`。
 - **权限：** `src-tauri/capabilities/default.json` 授权 `core:default` 与 `opener:default`。
 
 ## 文档

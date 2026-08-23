@@ -28,7 +28,7 @@ For quick frontend-only iteration:
 pnpm dev
 ```
 
-The Vite dev server runs at `http://localhost:1420` (`strictPort: true`) — free that port before starting.
+The Vite dev server runs at `http://localhost:3420` (`strictPort: true`) — free that port before starting.
 
 ## Build for production
 

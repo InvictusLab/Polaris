@@ -21,7 +21,7 @@ This is a Tauri v2 desktop application with a Vite + React + TypeScript frontend
 - **Config:** `src-tauri/tauri.conf.json`.
   - `beforeDevCommand` runs `pnpm dev`.
   - `beforeBuildCommand` runs `pnpm build`.
-  - Dev server is fixed at `http://localhost:1420` (see `vite.config.ts`).
+  - Dev server is fixed at `http://localhost:3420` (see `vite.config.ts`).
   - The library crate is named `polaris_lib`; the binary calls `polaris_lib::run()`.
 - **Capabilities:** `src-tauri/capabilities/default.json` grants `core:default` and `opener:default`. Capability `windows` entries match window `label`s; Tauri defaults the first window's label to `main` (the config sets no explicit label), so any new or renamed window needs its own capability entry. Keep capabilities aligned with any added plugin or API.
 - **Icons:** `src-tauri/icons/` contains packaged application icons. Do not hand-edit generated icon variants.
@@ -110,7 +110,7 @@ Build the full Tauri app (production frontend + Rust binary):
 pnpm tauri build
 ```
 
-The Vite dev server uses port `1420` with `strictPort: true`; free that port before starting development.
+The Vite dev server uses port `3420` with `strictPort: true`; free that port before starting development.
 
 ## Coding Style & Naming Conventions
 
