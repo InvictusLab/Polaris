@@ -11,6 +11,9 @@ export default defineConfig({
   title: 'Polaris',
   description: 'A Tauri v2 desktop application.',
 
+  // Exclude internal design specs (docs/superpowers/**) from the public build.
+  srcExclude: ['superpowers/**'],
+
   // Shared across all locales (shallow-merged into each locale's themeConfig).
   themeConfig: {
     socialLinks: [{ icon: 'github', link: 'https://github.com/InvictusLab/Polaris' }],

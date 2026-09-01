@@ -4,8 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polaris</title>
+    <!--
+      Pre-paint theme script — sets the dark/light class + color-scheme on <html>
+      before React mounts, so there is no flash of the wrong theme on cold start.
+      CSP is currently disabled (tauri.conf.json: app.security.csp = null).
+      When CSP is enabled, allow this inline script in script-src: sha256-O5yVzUr/m+SoB1gBzNXzns4Cs5bl6VfN0BCBg0n/5p8=
+    -->
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem("polaris-theme") || "system";
+          var d =
+            t === "dark" ||
+            (t === "system" &&
+              window.matchMedia("(prefers-color-scheme: dark)").matches);
+          var e = document.documentElement;
+          e.classList.remove("light", "dark");
+          e.classList.add(d ? "dark" : "light");
+          e.style.colorScheme = d ? "dark" : "light";
+        } catch {}
+      })();
+    </script>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
